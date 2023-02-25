@@ -107,7 +107,7 @@
 		accent_layer {
             bindings = <
             &none  &none    &kp E  &none    &none         &none    &none     &none   &kp O     &none
-            &kp A  &none    &none   &kp DK_AE    &none         &none    &none     &none   &none     &none
+            &kp A  &none    &none   &none    &none         &none    &none     &none   &none     &none
             &sk RALT  &none    &none  &none    &none         &none    &none     &none   &none     &sk RALT
             >;
         };
