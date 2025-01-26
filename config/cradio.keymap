@@ -33,9 +33,9 @@
         td_meh: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&mt LC(LA(LSHIFT)) BSPC>, <&sl EXT>;
-    };
+            tapping-term-ms = <200>;
+            bindings = <&mo LC(LA(LSHIFT)) BSPC>, <&sl EXT>;
+        ,};
     };
     combos {
         compatible = "zmk,combos";
