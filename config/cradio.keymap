@@ -40,6 +40,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <100>;
             quick-tap-ms = <50>;
+            require-prior-idle-ms = <125>;
             bindings = <&lt EXT BSPC>, <&kp LC(LA(LSHIFT))>;
     };
     };
