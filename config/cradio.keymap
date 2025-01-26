@@ -20,7 +20,9 @@
     ignore-modifiers;
 };
 
-
+&lt {
+    tapping-term-ms = <100>;
+}
 
 / {
     behaviors {
@@ -35,7 +37,9 @@
         td_meh: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
+            flavor = "tap-preferred";
             tapping-term-ms = <100>;
+            quick-tap-ms = <50>;
             bindings = <&lt EXT BSPC>, <&kp LC(LA(LSHIFT))>;
     };
     };
