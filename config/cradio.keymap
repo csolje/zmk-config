@@ -30,12 +30,6 @@
             quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
         };
-        td_meh: tap_dance_mod_tap {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mt LC(LA(LSHIFT)) BSPC>, <&sl EXT>;
-        };
     };
     combos {
         compatible = "zmk,combos";
@@ -64,10 +58,10 @@
 		// Base alpha layer
         default_layer {
             bindings = <
-            &kp Q      &kp W      &kp E    &kp R        &kp T                  &kp Y      &kp U      &kp I      &kp O     &kp P
-            &kp A      &kp S      &kp D    &kp F        &kp G                  &kp H      &kp J      &kp K      &kp L     &kp SQT
-            &kp Z      &kp X      &kp C    &kp V        &kp B                  &kp N      &kp M      &kp COMMA  &kp DOT   &mt LC(LA(LS(LGUI))) FSLH
-                                           &td_meh      &mt LSHFT SPACE        &mt LCTRL ENTER  &sl SYM
+            &kp Q      &kp W      &kp E    &kp R        &kp T                  &kp Y      &kp U      &kp I      &kp O                    &kp P
+            &kp A      &kp S      &kp D    &kp F        &kp G                  &kp H      &kp J      &kp K      &kp L                    &kp SQT
+            &kp Z      &kp X      &kp C    &kp V        &kp B                  &kp N      &kp M      &kp COMMA  &mt LC(LA(LSHIFT)) DOT   &mt LC(LA(LS(LGUI))) FSLH
+                                           &lt EXT BSPC &mt LSHFT SPACE        &mt LCTRL ENTER  &sl SYM
             >;
         };
 
