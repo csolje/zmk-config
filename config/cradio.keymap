@@ -25,18 +25,16 @@
 / {
     behaviors {
         ht: hold_tap {
-            label = "hold_tap";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <220>;
             quick-tap-ms = <150>;
-            global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
         td_meh: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
-            #binding-cell = <0>;
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&lt EXT BSPC>, <&kp LC(LA(LSHIFT))>;
     };
