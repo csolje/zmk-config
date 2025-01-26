@@ -34,7 +34,6 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
-            quick-tap-ms = <50>;
             bindings = <&mo LC(LA(LSHIFT)) BSPC>, <&sl EXT>;
     };
     };
